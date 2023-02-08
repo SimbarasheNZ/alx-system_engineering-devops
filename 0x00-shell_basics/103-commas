@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -a --group-directories-first | awk '{if ($0 ~ /^\./) printf "%.0s%s", sep, $0; else printf "%.0s%s/", sep, $0; sep=",";} END {print ""}'
+ls -amvp
